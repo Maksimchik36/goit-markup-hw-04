@@ -4,6 +4,7 @@
   --second-color: #757575;
   --third-color: #ffffff;
   --accent-color: #2196f3;
+  --background-color: #f5f4fa;
 }
 
 body {
@@ -123,6 +124,7 @@ img {
 
 .contacts-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 /* выделение иконок при hover и focus родителя */
 .header a:hover .contacts-icon,
@@ -139,11 +141,15 @@ img {
 /* ----Решения для бизнеса--- */
 
 .solutions {
-  background-color: #2f303a;
-  background-image: url(../images/hero.jpg);
-  background-size: auto;
-  background-position: center;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -171,6 +177,7 @@ img {
   cursor: pointer;
   color: var(--third-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
   border-radius: 4px;
 }
@@ -190,6 +197,17 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.feature-fon {
+  background-color: var(--background-color);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.feature-icons {
+  width: 70px;
+  height: 70px;
 }
 
 .feature-list {
