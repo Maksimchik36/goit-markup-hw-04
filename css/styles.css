@@ -5,6 +5,7 @@
   --third-color: #ffffff;
   --accent-color: #2196f3;
   --background-color: #f5f4fa;
+  --primary-icons-color: #afb1b8;
 }
 
 body {
@@ -305,11 +306,34 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 10px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-color);
+}
+
+.icon-networks {
+  width: 20px;
+  height: 20px;
+}
+
+.team .link {
+  display: inline-block;
+}
+
+.team .icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team .icon-item {
+  width: 44px;
+  height: 44px;
+}
+.team .icon-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* ---footer--- */
