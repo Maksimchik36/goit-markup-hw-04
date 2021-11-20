@@ -320,7 +320,7 @@ img {
 }
 
 .team .link {
-  display: inline-block;
+  display: block;
 }
 
 .team .icon-list {
