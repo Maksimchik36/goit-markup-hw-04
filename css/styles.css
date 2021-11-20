@@ -1,3 +1,4 @@
+/* присвоение значений переменным*/
 :root {
   --main-color: #212121;
   --second-color: #757575;
@@ -10,7 +11,7 @@ body {
   color: var(--main-color);
   background-color: #ffffff;
 }
-
+/* контейнер для структурирования и позиционирования секций */
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -85,7 +86,7 @@ img {
   color: var(--main-color);
 }
 
-/* Выделено назывние текущей страницы */
+/* Выделяет название текущей страницы */
 .nav-link.current {
   color: var(--accent-color);
 }
@@ -100,7 +101,8 @@ img {
 }
 
 .contacts-link {
-  display: block;
+  display: flex;
+  text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -118,6 +120,16 @@ img {
 .footer-link:focus {
   color: var(--accent-color);
 }
+
+.contacts-icon {
+  margin-right: 10px;
+}
+/* выделение иконок при hover и focus родителя */
+.header a:hover .contacts-icon,
+.header a:focus .contacts-icon {
+  fill: currentColor;
+}
+
 .container.main {
   display: flex;
   align-items: center;
@@ -128,6 +140,10 @@ img {
 
 .solutions {
   background-color: #2f303a;
+  background-image: url(../images/hero.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
