@@ -319,16 +319,16 @@ img {
   justify-content: center;
 }
 
-.team .networks-item {
+.networks-item {
   width: 44px;
   height: 44px;
 }
 
-.team .networks-item:not(:last-child) {
+.networks-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.team .networks-link {
+.networks-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,6 +398,7 @@ footer {
   background-color: #2f303a;
 }
 footer .container {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -543,4 +544,31 @@ address {
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
+}
+footer .networks-list {
+  display: flex;
+}
+.networks-text {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third-color);
+}
+
+.data-contacts {
+  margin-right: 70px;
+}
+footer .networks-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--third-color);
+}
+
+footer .networks-link:hover,
+footer .networks-link:focus {
+  background-color: var(--accent-color);
 }
