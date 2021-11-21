@@ -314,26 +314,39 @@ img {
   color: var(--second-color);
 }
 
-.icon-networks {
-  width: 20px;
-  height: 20px;
-}
-
-.team .link {
-  display: block;
-}
-
-.team .icon-list {
+.team .networks-list {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.team .icon-item {
+
+.team .networks-item {
   width: 44px;
   height: 44px;
 }
-.team .icon-item:not(:last-child) {
+
+.team .networks-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.team .networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  fill: var(--primary-icons-color);
+}
+
+.team .networks-link:hover,
+.team .networks-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--third-color);
+}
+
+.networks-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* ---footer--- */
