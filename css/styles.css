@@ -554,11 +554,13 @@ address {
 }
 
 .activities-link {
+  display: block;
   width: 100%;
   height: 100%;
 }
 
-.activities-link:hover {
+.activities-link:hover,
+.activities-link:focus {
   box-shadow: var(--shadow-portfolio-cards);
 }
 
